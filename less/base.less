@@ -1,0 +1,147 @@
+@main: #4d3633; //simpanz main
+@main2: #372325; //simpanz main2
+@main3: #fff;
+@maintext: #080014;
+
+@sunglow: #fbce3a;
+@webgolden: #f8d210;
+@honey: #ffb72b;
+@middle-yellow: #ffe61b;
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: @maintext;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+p {
+  margin-bottom: 2.6rem;
+}
+
+button {
+  border: none;
+  padding: 2rem 4rem;
+  text-align: center;
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input {
+  padding: 1.5rem 4rem;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+input[type="submit"] {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.button-brown {
+  background-color: @main2;
+  color: @main3;
+  transition: 0.3s all ease;
+}
+
+.button-brown:hover {
+  background-color: @maintext;
+  color: @webgolden;
+}
+
+.button-yellow {
+  background-color: @honey;
+  color: @maintext;
+  transition: 0.4s all linear;
+
+  &:hover {
+    background-color: @maintext;
+    transform: scale(1.01);
+    color: @main3;
+  }
+}
+
+.button-white {
+  background-color: #fff;
+  color: @main2;
+  transition: 0.5s all ease;
+}
+
+.button-white:hover {
+  background-color: @maintext;
+  color: @main3;
+}
+
+.section-cta-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hammersmith One", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2.7rem;
+  margin-bottom: 2.2rem;
+  color: @main2;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin-bottom: 1.7rem;
+}
+
+h4 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+h5 {
+  font-size: 1.9rem;
+  margin-bottom: 1.4rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+  margin-bottom: 1.3rem;
+}
